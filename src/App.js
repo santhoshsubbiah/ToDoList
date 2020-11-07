@@ -45,11 +45,7 @@ export class App extends Component {
 
     this.setState({ list: updatedList });
   }
-  // enterKeyHandler(e) {
-  //   if (e.key === "Enter") {
-  //     this.onClickHandler();
-  //   }
-  // }
+
   render() {
     return (
       <div>
@@ -59,7 +55,6 @@ export class App extends Component {
 
         <button onClick={this.onClickHandler} onkeyE>Add</button>
         <button onClick={() => this.setState({ isShowList: !this.state.isShowList })}>{this.state.isShowList ? 'Hide' : 'Show'} List</button>
-        {/* <button onClick={() => this.setState({ isShowList: false })}>Hide List</button> */}
         <button onClick={() => this.setState({ list: [] })}>Empty List</button>
 
         <br /> <br />
